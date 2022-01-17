@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JS DOM</title>
+  </head>
+  <body>
+    <h2>q1</h2>
+    <p id="text">JavaScript Exercises - w3resource</p>
+    <div>
+      <button id="jsstyle" onclick="js_style()">Style</button>
+    </div>
+    <h2>q2</h2>
+    <form id="form1" onsubmit="getFormvalue()">
+      First name: <input type="text" name="fname" value="David" /><br />
+      Last name: <input type="text" name="lname" value="Beckham" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <h2>q4</h2>
+    <p>
+      Collect the value of href, hreflang, rel, target, and type attributes of a
+      link
+    </p>
+    <p>
+      <a
+        id="w3r"
+        type="text/html"
+        hreflang="en-us"
+        rel="nofollow"
+        target="_self"
+        href="https://www.w3resource.com/"
+        >w3resource</a
+      >
+    </p>
+    <button onclick="getAttributes()">
+      Click here to get the attribute's value
+    </button>
+    <h2>q5</h2>
+    <p>Write a JavaScript program to remove items from a dropdown list.</p>
+    <form>
+      <select id="colorSelect">
+        <option>Red</option>
+        <option>Green</option>
+        <option>White</option>
+        <option>Black</option>
+      </select>
+      <input type="button" onclick="removeColor()" value="Select and Remove" />
+    </form>
+    <h2>q6</h2>
+    <p>Count and display items of a dropdown list</p>
+    <form>
+      Select your favorite Color :
+      <select id="mySelect">
+        <option>Red</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>White</option>
+      </select>
+      <input
+        type="button"
+        onclick="getOptions()"
+        value="Count and Output all items"
+      />
+    </form>
+    <h2>q7</h2>
+    <p>Write a JavaScript program to calculate the volume of a sphere.</p>
+    <form action="" method="post" id="MyForm">
+      <label for="radius">Radius</label
+      ><input type="text" name="radius" id="radius" required />
+      <label for="volume">Volume</label
+      ><input type="text" name="volume" id="volume" />
+      <input type="submit" value="Calculate" id="submit" />
+    </form>
+    <!-- <h2>q8</h2>
+    <div>
+      <button id="jsstyle" onclick="display_random_image();">Show Image</button>
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>
